@@ -10,7 +10,7 @@ Script will create a list of all folders located inside **input_folder** and wil
 
 It was designed to provide random selection of music every week to be automatically uploaded to the phone and it is possible and advisable to set total selection size and total number of folders selected.
 
-The script copies music by folders (considered as albums), and will also preserve file hierarchy in the output folder as well (example: "input_folder/artist/album_a will" be copied to "output_folder/artist/album_a"). There is a slight chance it will copy folder with sub-folders (e.g. full discography), but statistically it is low, mu.
+The script copies music by folders (considered as albums), and will also preserve file hierarchy in the output folder as well (example: "*input_folder/artist/album_a*" will be copied to "*output_folder/artist/album_a*"). There is a slight chance it will copy folder with sub-folders (e.g. full discography), but statistically it is low, mu.
 
 Will work with any files, not only music ones, just was created for music.
 
