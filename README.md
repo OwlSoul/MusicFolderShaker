@@ -25,7 +25,7 @@ Will work with any files, not only music ones, just was created for music.
 
 `max_tries` - maximum number of tries to make a selection. Script works by randomly selecting a folder, and if it does not fit (total size too big), it will select another random folder. This value limits maximum number of this attempts. Optional, default is 4000.
 
-`result_file` - file to store the result of the script. I used for monitoring this script right now. Optional, default is "result.log"
+`result_file` - file to store the result of the script. Used for monitoring. Optional, default is "result.log"
 Returns following values:
 0 - script completed without errors.
 1 - error in scanning input folder (does not exist or access violations)
