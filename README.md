@@ -27,10 +27,15 @@ Will work with any files, not only music ones, just was created for music.
 
 `result_file` - file to store the result of the script. Used for monitoring. Optional, default is "result.log"
 Returns following values:
+
 0 - script completed without errors.
+
 1 - error in scanning input folder (does not exist or access violations)
+
 2 - selection process failed
+
 3 - failed to empty target directory
+
 4 - failed to copy selection to destination folder (does not exist, access violation etc.)
 
 ## Notes
