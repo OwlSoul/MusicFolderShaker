@@ -28,15 +28,15 @@ Will work with any files, not only music ones, just was created for music.
 `result_file` - file to store the result of the script. Used for monitoring. Optional, default is "result.log"
 Returns following values:
 
-0 - script completed without errors.
+&nbsp;&nbsp;&nbsp;&nbsp;0 - script completed without errors.
 
-1 - error in scanning input folder (does not exist or access violations)
+&nbsp;&nbsp;&nbsp;&nbsp;1 - error in scanning input folder (does not exist or access violations)
 
-2 - selection process failed
+&nbsp;&nbsp;&nbsp;&nbsp;2 - selection process failed
 
-3 - failed to empty target directory
+&nbsp;&nbsp;&nbsp;&nbsp;3 - failed to empty target directory
 
-4 - failed to copy selection to destination folder (does not exist, access violation etc.)
+&nbsp;&nbsp;&nbsp;&nbsp;4 - failed to copy selection to destination folder (does not exist, access violation etc.)
 
 ## Notes
 Please ensure your terminal supports Unicode in case you have Unicode-named files (Japanese, Korean, Chinese etc.) 
