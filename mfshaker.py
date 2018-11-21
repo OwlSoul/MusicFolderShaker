@@ -12,6 +12,10 @@ import random
 import shutil
 import distutils.dir_util
 import argparse
+import win_unicode_console
+
+# This is needed for Windows
+win_unicode_console.enable()
 
 # ----------------                                 CONFIGURATION                                      ---------------- #
 
@@ -79,12 +83,12 @@ if args.result_file:
     result_file = args.result_file
 
 print()
-print("PATH IN   : \""+start_path+"\"")
-print("PATH OUT  : \""+output_path+"\"")
+print("PATH IN    : \""+start_path+"\"")
+print("PATH OUT   : \""+output_path+"\"")
 print("----")
-print("MAX SIZE  :", selection_max_size, "/", selection_max_size / (1024*1024), "MB")
-print("MAX COUNT :", selection_max_count)
-print("MAX TRIES :", selection_max_tries)
+print("MAX SIZE   :", selection_max_size, "Bytes (", selection_max_size / (1024*1024), "MB)")
+print("MAX COUNT  :", selection_max_count)
+print("MAX TRIES  :", selection_max_tries)
 print("RESULT FILE:", result_file)
 print()
 
@@ -138,7 +142,7 @@ for i in range(0, selection_max_tries):
         if selected_count >= selection_max_count:
             break
 
-print("Total size: ", total_size, "bytes / ", total_size/(1024*1024), "MB")
+print("Total size: ", total_size, "Bytes / ", total_size/(1024*1024), "MB")
 
 write_result(result_file, 3)
 
