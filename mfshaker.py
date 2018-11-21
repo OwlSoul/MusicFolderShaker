@@ -164,7 +164,10 @@ for i in range(0, len(selected_list)):
     target_dir = selected_list[i][0][len(start_path)+1:]
     dst_path = os.path.join(output_path, target_dir)
     print("    Copy to:", dst_path, "\n")
-    distutils.dir_util.copy_tree(selected_list[i][0], dst_path)
+    try:
+        distutils.dir_util.copy_tree(selected_list[i][0], dst_path)
+    except Exception as e:
+        print(e)
 print("DONE!")
 
 write_result(result_file, 0)
