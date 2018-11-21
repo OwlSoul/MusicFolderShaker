@@ -16,7 +16,7 @@ Will work with any files, not only music ones, just was created for music.
 
 ## Installation
 
-Due to Python, well, *minor* problems with console and Unicode on windows, this script requires *win_unicode_console* module:
+Due to Python, well, *minor* problems with console and Unicode on Windows, this script requires *win_unicode_console* module:
 
 `pip install win_unicode_console`
 
