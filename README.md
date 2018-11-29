@@ -14,6 +14,15 @@ The script copies music by folders (considered as albums), and will also preserv
 
 Will work with any files, not only music ones, just was created for music.
 
+## Installation
+
+Due to Python's, well, *minor* problems with console and Unicode on Windows, this script requires *win_unicode_console* module:
+
+`pip install win_unicode_console`
+
+The script itself can be plaaced wherever you want to.
+
+
 ## Usage
 ```python mfshaker.py input_directory output_directory --max_size 2097152 --max_count 50 --max_tries 4000 --result_file mfshaker.result ```
 
