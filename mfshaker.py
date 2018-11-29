@@ -164,10 +164,10 @@ write_result(result_file, 4)
 # STEP 05: Copying selected files
 print("Copying selected files...")
 for i in range(0, len(selected_list)):
-    print(str(i+1)+"/"+str(selected_count), selected_list[i][0], ":", selected_list[i][1]/(1024*1024), "MB")
+    print(str(i+1)+"/"+str(selected_count), selected_list[i][0].encode("utf-8"), ":", selected_list[i][1]/(1024*1024), "MB")
     target_dir = selected_list[i][0][len(start_path)+1:]
     dst_path = os.path.join(output_path, target_dir)
-    print("    Copy to:", dst_path, "\n")
+    print("    Copy to:", dst_path.encode("utf8"), "\n")
     try:
         distutils.dir_util.copy_tree(selected_list[i][0], dst_path)
     except Exception as e:
